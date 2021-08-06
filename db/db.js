@@ -1,4 +1,3 @@
-onst util = require("util");
 const connection = require("./connection");
 var inquirer = require("inquirer");
 

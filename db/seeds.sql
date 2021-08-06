@@ -1,31 +1,66 @@
-use 12.Employee-Trackerdb;
+INSERT INTO department (name)
+VALUES ("Marketing");
 
-INSERT INTO employee (first_name, last_name, role_id,manager_id)
-VALUES ("kyle", "Queen", 2,3);
+INSERT INTO department (name)
+VALUES ("Human Resourses");
 
-INSERT INTO employee (first_name, last_name, role_id,manager_id)
-VALUES ("Micheal", "turner", 2,3);
+INSERT INTO department (name)
+VALUES ("Operations");
 
-INSERT INTO employee (first_name, last_name, role_id,manager_id)
-VALUES ("Shawn", "Lace", 2,NULL);
+INSERT INTO department (name)
+VALUES ("Finance");
 
-INSERT INTO employee (first_name, last_name, role_id,manager_id)
-VALUES ("Debra", "Cole", 1,9);
+INSERT INTO department (name)
+VALUES ("Sales");
 
-INSERT INTO employee (first_name, last_name, role_id,manager_id)
-VALUES ("Jammie", "Kings", 1,9);
+INSERT INTO department (name)
+VALUES ("Purchase");
 
-INSERT INTO employee (first_name, last_name, role_id,manager_id)
-VALUES ("Jamal", "Remmy", 1,9);
+INSERT INTO roles (title, salary, department_id)
+VALUES ("Marketing Manager", 100000, 1);
 
-INSERT INTO employee (first_name, last_name, role_id,manager_id)
-VALUES ("Anderson", "Reeves", 3,10);
+INSERT INTO roles (title, salary, department_id)
+VALUES ("Marketing Coordinator", 75000, 1);
 
-INSERT INTO employee (first_name, last_name, role_id,manager_id)
-VALUES ("Megan", "Bayless", 3,10);
+INSERT INTO roles (title, salary, department_id)
+VALUES ("Accountant", 80000, 4);
 
-INSERT INTO employee (first_name, last_name, role_id,manager_id)
-VALUES ("Shannon", "Sharp", 1,Null);
+INSERT INTO roles (title, salary, department_id)
+VALUES ("Sales Manager", 150000, 5);
 
-INSERT INTO employee (first_name, last_name, role_id,manager_id)
-VALUES ("Tim", "Tebow", 3,Null);
+INSERT INTO roles (title, salary, department_id)
+VALUES ("Sales Assistant", 100000, 5);
+
+INSERT INTO roles (title, salary, department_id)
+VALUES ("Purchasing Manager", 135000, 6);
+
+INSERT INTO roles (title, salary, department_id)
+VALUES ("Operations analyst", 75000, 3);
+
+INSERT INTO roles (title, salary, department_id)
+VALUES ("Corporate Recruiter", 50000, 2);
+
+
+INSERT INTO employee(first_name, last_name, roles_id)
+VALUES ("John", "Howard", 1);
+
+INSERT INTO employee(first_name, last_name, roles_id)
+VALUES ("Richard", "Reeves", 1);
+
+INSERT INTO employee(first_name, last_name, roles_id)
+VALUES ("Noland", "cape", 4);
+
+INSERT INTO employee(first_name, last_name, roles_id)
+VALUES ("Prince", "Tylers", 5);
+
+INSERT INTO employee(first_name, last_name, roles_id)
+VALUES ("Donald", "King", 5);
+
+INSERT INTO employee(first_name, last_name, roles_id)
+VALUES ("Reed", "Renner", 6);
+
+INSERT INTO employee(first_name, last_name, roles_id)
+VALUES ("Reese", "Powers", 3);
+
+INSERT INTO employee(first_name, last_name, roles_id)
+VALUES ("Winter", "Splinters",2);

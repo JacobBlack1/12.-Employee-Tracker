@@ -1,0 +1,19 @@
+{
+  "name": "12.-employee-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobBlack1/12.-Employee-Tracker.git"
+  },
+  "author": "Jacob Black",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JacobBlack1/12.-Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/JacobBlack1/12.-Employee-Tracker#readme"
+}

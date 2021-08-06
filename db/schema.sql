@@ -19,3 +19,14 @@ CREATE TABLE company_role (
 );
  
 CREATE TABLE employees (
+    emp_id INT NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(30) NOT NULL,
+    last_name VARCHAR(30) NOT NULL,
+    emp_role_id INT NOT NULL,
+    manager_id INT,
+    PRIMARY KEY (emp_id),
+    FOREIGN KEY (emp_role_id) REFERENCES company_role(role_id),
+    FOREIGN KEY (manager_id) REFERENCES employees(emp_id)
+);
+
+
